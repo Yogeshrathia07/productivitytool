@@ -1,1 +1,1 @@
-web: gunicorn productivitytool.wsgi
+web: gunicorn BIT.wsgi
