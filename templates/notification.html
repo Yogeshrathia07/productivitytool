@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body bgcolor="gray">
+
+
+    <div class="card text-white bg-secondary mb-3" style="max-width: 18rem;">
+        <div class="card-header"></div>
+        <div class="card-body">
+            <table>
+                <th>NOTIFICATION</th>
+
+                <tr>
+                    
+                </tr>
+                {%for noti in n8 %}
+                <tr>
+                    {{noti.name}}
+                    {{noti.subject}}
+                    {{noti.tital}}
+                    {{noti.date}}
+                    {{noti.day}}
+                    {{noti.starttime}}
+                    {{noti.endtime}}
+                    {{noti.notes}}
+                    {{noti.link}}
+                    {{noti.img}}
+                    Image Download
+                    <a href="{{noti.ing.url}}" download>{{noti.img}}</a>
+                    File Download
+                    <a href="{{noti.file.url}}" download>{{noti.file}}</a>
+                    
+                </tr>
+                {%endfor%}
+            </table>
+        </div>
+    </div>
+
+</body>
+
+</html>
